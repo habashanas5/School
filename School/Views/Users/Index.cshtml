@@ -1,0 +1,41 @@
+﻿@model IEnumerable<UserInfo>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Users</h1>
+
+<!--<a asp-action="Add" class="btn btn-primary" style="margin-top: 10px;"> Add New </a>-->
+
+<table class="table table-striped mt-4">
+    <thead>
+        <tr class="bg-primary text-white">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@string.Join(" , ", user.Roles.ToList())</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Users" asp-action="ManageRoles" asp-route-userId="@user.Id">Manage Roles</a>
+                    <form method="post" asp-action="Delete" asp-route-id="@user.Id" onsubmit="return confirm('Are you sure you want to delete this user?'); ">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-danger" style="margin-top: 10px; width: 125px;" >Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
