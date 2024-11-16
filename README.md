@@ -2,8 +2,8 @@
 
 ## Project Features:
 ### 1- Backend Development:
-####   - Built using ASP.NET MVC and API for robust and scalable functionality.
-####   - Database management is handled using SQL Server Management Studio (SSMS).
+#### 	Built using ASP.NET MVC and API for robust and scalable functionality.
+#### 	Database management is handled using SQL Server Management Studio (SSMS).
 
 ### 2- User Authentication and Authorization:
 ###   - Integrated ASP.NET Identity for secure user management.
