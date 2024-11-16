@@ -1,2 +1,16 @@
-## I created a small school project featuring separate tables for teachers, subjects, and students, along with a table that links each student to their subject and teacher.
-# This project was developed using ASP.NET MVC, API, database (SQL Server Management Studio), and Identity for user authentication functionalities including login, register, logout, profile management, adding roles, deleting roles, adding users, deleting users,JWT, and authorization.
+ِ# A small school project that includes separate tables for teachers, subjects, and students, along with a junction table that links each student to their respective subject and teacher.
+
+## Project Features:
+### * Backend Development:
+####   - Built using ASP.NET MVC and API for robust and scalable functionality.
+####   - Database management is handled using SQL Server Management Studio (SSMS).
+
+### * User Authentication and Authorization:
+###   - Integrated ASP.NET Identity for secure user management.
+###   - Core features include:
+###       Login and Register functionality for authentication.
+###       Logout and Profile Management for user session and updates.
+###   - Role-based access control:
+###       Adding and deleting roles.
+###       Adding and removing users.
+###   - Implemented JWT (JSON Web Token) for secure API authorization
