@@ -1,4 +1,4 @@
-ِ# A small school project that includes separate tables for teachers, subjects, and students, along with a junction table that links each student to their respective subject and teacher.
+# A small school project that includes separate tables for teachers, subjects, and students, along with a junction table that links each student to their respective subject and teacher.
 
 ## Project Features:
 ### * Backend Development:
